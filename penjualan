@@ -1,0 +1,56 @@
+import java.util.Scanner;
+
+public class PenjualanSusu1 {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int totalPembayaran = 0;
+
+        System.out.println("Selamat datang di Agen Susu");
+        System.out.println("Kode Susu: ");
+        System.out.println("a - Dancow");
+        System.out.println("b - Bendera");
+        System.out.println("c - SGM");
+
+        char pilihanSusu;
+        int hargaSusu = 0;
+
+        do {
+            System.out.print("Masukkan kode susu (a/b/c): ");
+            pilihanSusu = input.next().charAt(0);
+        } while (pilihanSusu != 'a' && pilihanSusu != 'b' && pilihanSusu != 'c');
+
+        System.out.println("Ukuran Kaleng Susu: ");
+        System.out.println("1 - Kecil");
+        System.out.println("2 - Sedang");
+        System.out.println("3 - Besar");
+
+        int pilihanUkuran;
+        do {
+            System.out.print("Masukkan kode ukuran (1/2/3): ");
+            pilihanUkuran = input.nextInt();
+        } while (pilihanUkuran != 1 && pilihanUkuran != 2 && pilihanUkuran != 3);
+
+        int banyakBeli;
+        System.out.print("Masukkan jumlah yang dibeli: ");
+        banyakBeli = input.nextInt();
+
+        switch (pilihanSusu) {
+            case 'a':
+                hargaSusu = (pilihanUkuran == 1) ? 5000 : (pilihanUkuran == 2) ? 10000 : 15000;
+                break;
+            case 'b':
+                hargaSusu = (pilihanUkuran == 1) ? 4500 : (pilihanUkuran == 2) ? 9000 : 13500;
+                break;
+            case 'c':
+                hargaSusu = (pilihanUkuran == 1) ? 6000 : (pilihanUkuran == 2) ? 12000 : 18000;
+                break;
+            default:
+                System.out.println("Kode susu tidak valid.");
+                break;
+        }
+
+        int totalBayar = hargaSusu * banyakBeli;
+
+        System.out.println("Total Pembayaran: Rp " + totalBayar);
+    }
+}
