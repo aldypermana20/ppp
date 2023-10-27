@@ -1,0 +1,5 @@
+public class nama {
+    public static void main(String[] args) {
+        System.out.println("Bismillahirrahmanirrahim, saya yang bernama Aldy Permana dengan nim: 1237050003 berjanji dan bersunggung-sunguh semaksimal mungkin mengerjakan UTS ini dengan usaha sendiri, tanpa sekalipun melihat pekerjaan teman saya, serta mematuhi tata tertib selama ujian. jika saya melanggar janji ini,Saya berani bertanggung jawab");
+    }
+}
