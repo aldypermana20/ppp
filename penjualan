@@ -5,7 +5,7 @@ public class PenjualanSusu1 {
         Scanner input = new Scanner(System.in);
         int totalPembayaran = 0;
 
-        System.out.println("Selamat datang di Agen Susu");
+        System.out.println("TOKO KELONTONG KERONCONGAN");
         System.out.println("Kode Susu: ");
         System.out.println("a - Dancow");
         System.out.println("b - Bendera");
